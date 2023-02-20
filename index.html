@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -54,6 +55,7 @@
             margin-top: 20px;
             font-size: 18px;
         }
+        .elemento {}
 
         /* Estilos para los campos de entrada de texto */
         input[type="text"],
@@ -65,6 +67,7 @@
             border: 1px solid #ccc;
             border-radius: 5px;
             margin-top: 5px;
+            
         }
 
         /* Estilos para los campos de selección */
@@ -135,7 +138,7 @@
             }
         
             /* Estilos para los campos de entrada de texto */
-            input[type="text"],
+            input[type="text" class="elemento"],
             input[type="email"],
             input[type="tel"] {
                 font-size: 14px;
@@ -167,14 +170,15 @@
         <form>
             <div class="form-section">
                 <label for="nombre-iglesia">Nombre de la Iglesia:</label>
-                <input type="text" id="nombre-iglesia" name="nombre-iglesia" />
+                <input type="text" class="elemento" id="nombre-iglesia" name="nombre-iglesia" />
                 <label for="fecha">Fecha:</label>
                 <input type="date" id="fecha" name="fecha" />
             </div>
+
             <div class="form-section">
                 <h2>Información Personal</h2>
                 <label for="nombre-completo">Nombre completo:</label>
-                <input type="text" id="nombre-completo" name="nombre-completo" />
+                <input type="text" class="elemento" id="nombre-completo" name="nombre-completo" />
                 <label for="fecha-nacimiento">Fecha de nacimiento:</label>
                 <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" />
                 <label>Género:</label>
@@ -182,13 +186,12 @@
                 <label for="masculino">Masculino</label>
                 <input type="radio" id="femenino" name="genero" value="femenino" />
                 <label for="femenino">Femenino</label>
-                <input type="radio" name="genero" value="otro" />
                 <label for="direccion">Dirección:</label>
-                <input type="text" id="direccion" name="direccion" />
+                <input type="text" class="elemento" id="direccion" name="direccion" />
                 <label for="ciudad">Ciudad:</label>
-                <input type="text" id="ciudad" name="ciudad" />
+                <input type="text" class="elemento" id="ciudad" name="ciudad" />
                 <label for="estado">Estado:</label>
-                <input type="text" id="estado" name="estado" />
+                <input type="text" class="elemento" id="estado" name="estado" />
                 <label for="telefono">Teléfono:</label>
                 <input type="tel" id="telefono" name="telefono" />
                 <label for="correo">Correo electrónico:</label>
@@ -210,7 +213,7 @@
                 <br />
                 <label>Si respondió "sí", por favor indique el nombre de su
                     cónyuge:</label>
-                <input type="text" name="nombre-conyuge" />
+                <input type="text" class="elemento" name="nombre-conyuge" />
                 <br />
                 <label>¿Está divorciado/a?</label>
                 <input type="checkbox" name="divorciado" value="si" />
@@ -252,7 +255,7 @@
                 <br />
                 <label>Si respondió "sí", por favor indique desde cuándo es
                     miembro:</label>
-                <input type="text" name="fecha-miembro" />
+                <input type="text" class="elemento" name="fecha-miembro" />
                 <br />
                 <label>¿Asiste regularmente a los servicios de la iglesia?</label>
                 <input type="checkbox" name="asistencia" value="si" />
@@ -261,7 +264,7 @@
                 No
                 <br />
                 <label>Si respondió "sí", por favor indique con qué frecuencia:</label>
-                <input type="text" name="frecuencia-asistencia" />
+                <input type="text" class="elemento" name="frecuencia-asistencia" />
                 <br />
                 <h2>Habilidades y Talento</h2>
                 <label>¿Tiene habilidades especiales que pueda compartir con la iglesia?
@@ -270,7 +273,7 @@
                 <input type="radio" name="habilidades" value="no" />No<br />
 
                 <label>Si respondió "sí", por favor especifique:</label>
-                <input type="text" name="habilidades_especificar" /><br /><br />
+                <input type="text" class="elemento" name="habilidades_especificar" /><br /><br />
 
                 <label>¿Está interesado/a en servir en algún ministerio de la iglesia?
                 </label>
@@ -278,7 +281,7 @@
                 <input type="radio" name="ministerio" value="no" />No<br />
 
                 <label>Si respondió "sí", por favor especifique:</label>
-                <input type="text" name="ministerio_especificar" /><br /><br />
+                <input type="text" class="elemento" name="ministerio_especificar" /><br /><br />
                 <button type="submit" class="submit-button">Enviar</button>
 
 
